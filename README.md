@@ -14,3 +14,6 @@ Take a look at [Pytorch to Javascript with ONNX GitHub](https://github.com/ellio
 [Yoga Pose Dataset](https://www.kaggle.com/niharika41298/yoga-poses-dataset)
 
 ### **What Next?**
+
+- Image Source: [Kaggle Yoga Pose Dataset](https://www.kaggle.com/general/192938)<br>
+- I used a subset of this dataset to simplify the training process and to get to working with the broswer more quickly. 
