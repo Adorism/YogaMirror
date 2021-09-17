@@ -3,7 +3,7 @@
 ## **Async Week Project**
 
 ### **Video Link**
-[5-minute walkthrough](https://www.youtube.com)
+[5-minute walkthrough](https://youtu.be/t_fLzz7Ov2U)
 
 ### **What Did I Do?**
 I had been working with pytorch models and stumbled across the idea that these machine learning models could be converted in such a way that they can be compatible with Javascript and loaded directly in the broswer. This means that a dynamic model can be fast, easy to host, and offer offline support. At least, that's what I learned from this video. I wanted to put it to the test by creating a small pytorch model to differentiate between several different yoga poses. This would also mean that I would need to investigate the technologies for live mirroring the pose from a webcam input. I'll get to that next. [Possible Reference for Next Step](https://webmobtuts.com/javascript/accessing-webcam-with-javascript-getusermedia/)
