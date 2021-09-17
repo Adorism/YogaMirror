@@ -15,9 +15,9 @@ let lastY = 0;
 
 // Load our model.
 const sess = new onnx.InferenceSession();
-const loadingModelPromise = sess.loadModel("./onnx_model.onnx");
+const loadingModelPromise = sess.loadModel("./YogaPose.onnx");
 
-// Add 'Draw a number here!' to the canvas.
+// Add 'Draw a yoga pose!' to the canvas.
 ctx.lineWidth = 28;
 ctx.lineJoin = "round";
 ctx.font = "28px sans-serif";
@@ -72,7 +72,7 @@ function canvasMouseDown(event) {
   isMouseDown = true;
   if (hasIntroText) {
     clearCanvas();
-    hasIntroText = false;
+    hasIntroText = true;
   }
   const x = event.offsetX / CANVAS_SCALE;
   const y = event.offsetY / CANVAS_SCALE;
@@ -121,5 +121,5 @@ loadingModelPromise.then(() => {
   clearButton.addEventListener("mousedown", clearCanvas);
 
   ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
-  ctx.fillText("Draw a yoga pose here!", CANVAS_SIZE / 2, CANVAS_SIZE / 2);
+  ctx.fillText("Pick a yoga pose!", CANVAS_SIZE / 2, CANVAS_SIZE / 2);
 })
